@@ -1,0 +1,34 @@
+<script>
+var count = 1;
+var right = "right answers:\n";
+var wrong = "wrong answers:\n";
+var x = 0;
+var y = 0;
+var mark = 0;
+for(count = 1; count<=12; count++){
+    x = Math.floor(Math.random()*89 + 10);
+    y = Math.floor(Math.random()*89 + 10);
+    var kesh = (x * y);
+var answer = +prompt(`Step(${count}): ${x}` + ` * ${y} = `);
+if(answer == kesh){ right += `${x}` + ` * ${y} =  ${kesh} \n`; mark++; } else { wrong += `${x}` + ` * ${y} !=  ${answer} but = ${kesh} \n`;}
+}
+
+
+console.log(right);
+console.log(wrong);
+if(mark<3){
+console.log("You're obviously a humanitarian, your mark - ", mark);} else 
+{ if(mark<8){console.log('not bad... your mark - ', mark);} else{ console.log("You're almost a genius, your mark - ", mark);}
+}
+
+
+
+
+
+
+
+
+
+</script>
+    
+   
